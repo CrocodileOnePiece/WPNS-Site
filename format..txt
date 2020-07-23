@@ -1,0 +1,213 @@
+                              Featured Services
+                      sabsfasbcvsabsvckhjsbacbkasbjkasbcj
+                      hasvyhfvsahfvsasfvhasvhdfavsdvchasv
+                      sjbncjkabcajksbcjkabsjcbasjbcaskjbc
+          
+              :Stuff Provided- jbscajbcjsbjcbsjbcjabcjbsabjc....
+
+              :Stuff Provided- jbscajbcjsbjcbsjbcjabcjbsabjc....
+
+              :Stuff Provided- jbscajbcjsbjcbsjbcjabcjbsabjc....
+
+              :Stuff Provided- jbscajbcjsbjcbsjbcjabcjbsabjc....
+
+
+
+
+
+
+
+
+
+
+                               Providers
+                adbnvajdbvjadvkjbvjdbvjkhbczxJKBVJKZBXV
+                idfhsdohfsdohdfasdohifasoihfaasfcbhasdc
+                sabfujbvcjkadsbvabvkjbsjbajsvbkjabvajsb
+
+
+Physicians                    Nurse Practioners            Medical assistent   
+                                                                 
+                                 
+img()                               imgs()                      imgs()
+                                 Julie Tucker,              micheal Obin               
+                                     FMNP             medicalassistent/cooordinator          
+Dr.Chidimma Okoli MD:                  
+                                    imgs()
+Ceo/Owner of WPNS.             Brittany Westerman
+                                     CNP
+
+ blah balh blah                            
+                                   
+
+
+Virtual visits
+
+Schedule a video or telephone appointment- conducted using your smartphone, tablet or computer 
+
+Urgent medical issues- get Instant Access to Urgent Services 
+
+Request medication refills from your Electronic Device.
+
+Common conditions treated by virtual visits 
+
+Acne
+Allergies
+Back strain/ discomfort 
+Cold and upper respiratory infections
+Cough and sore throat
+Conjunctivitis (Pink Eye)
+Constipation
+Influenza (the Flu)
+Insect bites
+Minor burns, Cuts and Scrapes
+Men’s issues
+Nausea and vomiting 
+Yeast Infections 
+Rashes
+Difficulty or pain with urinating
+STDs
+Stress
+Sinus infections 
+Women’s issues
+
+If you have a life threatening illness or emergency, do not call or schedule a visit with us. Dial 911 for you local emergency response team to be set to the nearest emergency department 
+
+
+Pay bill
+With insurance- we accept all major insurances including Aetna, Blue cross blue shield, Fallon Community health plans,Medicare, Masshealth/Medicaid, Tufts, Harvard Pilgrim, Health New England, Senior Whole Health. Copayments may apply.
+
+Can’t find your insurance, no worries. A virtual visit session costs $50 payable by credit card
+
+Without insurance- a virtual visit session cost $50. Follow the link to make a payment 
+
+
+
+ let hover=document.getElementById('a')
+ let hover2=document.getElementById('b')
+ let hover3 = document.getElementById('c')
+
+ function getBigger(what) {
+      what.style.width = '500px;';
+      what.style.height='auto';
+ }
+
+ hover.addEventListener("mouseover",getBigger(hover));
+ hover2.addEventListener("mouseover",getBigger(hover2));
+ hover3.addEventListener("mouseover",getBigger(hover3));
+
+
+
+
+require("xmlhttprequest").XMLHttpRequest;
+
+ 
+ //Virtua; visits form//
+
+ const url='/email'
+
+ 
+ const input=document.querySelector('#Input1');
+ const input2=document.querySelector('#Input2');
+ const select1=document.querySelector('#Select1');
+ const select2=document.querySelector('#Select2');
+ const text=document.querySelector('#Textarea1');
+
+  import XMLHttpRequest from 'xhr2';
+
+ function sendFormData(){
+     let value=input.value;
+     const data=JSON.stringify({destination: value})
+     const xhr= new XMLHttpRequest();
+     xhr.responseType='json'
+     
+     
+    xhr.open('POST', url)
+    
+    xhr.send(data)
+   
+ }
+ function sendFormData1(){
+    const value1=input2.value;
+    const data1=JSON.stringify({destination: value1})
+    const xhr1= new XMLHttpRequest();
+    xhr1.responseType='json'
+    
+    
+   xhr1.open('POST', url)
+   
+   xhr1.send(data1)
+
+}
+ function sendFormData2(){
+     const value2=select1.value;
+     const data2=JSON.stringify({destination: value2})
+     const xhr2= new XMLHttpRequest();
+     xhr2.responseType='json'
+     
+     
+    xhr2.open('POST', url)
+    
+    xhr2.send(data2)
+
+ }
+
+ function sendFormData3(){
+     const value3=select2.value;
+     const data3=JSON.stringify({destination: value3})
+     const xhr3= new XMLHttpRequest();
+     xhr3.responseType='json'
+     
+     
+    xhr3.open('POST', url)
+    
+    xhr3.send(data3)
+
+ }
+ function sendFormData4(){
+     const value4=text.value;
+     const data4=JSON.stringify({destination: value4})
+     const xhr4 =  new XMLHttpRequest();
+     xhr4.responseType='json'
+
+
+ ////////const name=$('#name').val().trim()
+       const email = $('#email').val().trim()
+       const time = $('#Select1').val().trim()
+       const day = $('#Select2').val().trim()
+       const text = $('#Text').val().trim()
+
+       $.post('/email',data,'')
+     
+     
+    xhr4.open('POST', url)
+    
+    xhr4.send(data4)
+ }
+
+let submit=document.getElementById('dodo');
+
+ submit.addEventListener("click", function(){
+     event.preventDefault();
+     
+     sendFormData();
+     sendFormData1();
+     sendFormData2();
+     sendFormData3();
+     sendFormData4();
+     console.log('Server recieved data');
+ });
+
+
+<div class="navv">
+          <img class= "title img-fluid"  src="../logo/LogoMakr_5iAESO.png">
+        
+          <nav>
+            <ul>
+            <li><a href="Virtual.ejs">Virtual Visits</a></li>
+            <li><a href="../WPNS Website/pages/In-Office.html">In-Office Visits</a></li>
+            <li><a href="../WPNS Website/pages/About.html">About Us</a></li>
+            <li><a href="../WPNS Website/pages/contact.html">Contact</a></li>
+            <li><a href="/">Home</a></li>
+           </ul>
+         </nav>

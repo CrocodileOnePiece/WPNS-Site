@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+ <html class="no-js">
+  <head>
+    <title>WPNServices</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+    <link href= "../public/assets/styles.css" rel="stylesheet" type="text/css" />
+     
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&amp;family=Libre+Baskerville&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&family=Quicksand:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <!--ALL LINKS INSIDE FOR THE WEBSITE-->
+    <meta charset="utf-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--stlying for navs in general-->
+    <style>
+      
+      a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 525;}
+
+      a:link {
+ color: whitesmoke;
+ text-decoration: none;}
+
+      a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;}
+ 
+      a:hover{
+    color: rgb(245, 245, 245);
+    text-decoration:none;  }
+     
+      a:active{
+    color: rgb(245, 245, 245);
+    text-decoration: none;}
+
+    /* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  
+  
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+.contact-form {
+  margin-top: 30px;
+}
+.contact-form .input-block {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: solid 1px #42403f;
+  width: 100%;
+  height: 60px;
+  padding: 25px;
+  position: relative;
+  margin-bottom: 20px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.contact-form .input-block.focus {
+  background-color: #fff;
+  border: solid 1px #000000;
+}
+.contact-form .input-block.textarea {
+  height: auto;
+}
+.contact-form .input-block.textarea .form-control {
+  height: auto;
+  resize: none;
+}
+.contact-form .input-block label {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  display: block;
+  margin: 0;
+  font-weight: 300;
+  z-index: 1;
+  color: #333;
+  font-size: 18px;
+  line-height: 10px;
+}
+.contact-form .input-block .form-control {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  color: #333;
+}
+.contact-form .input-block .form-control:focus label {
+  top: 0;
+}
+.contact-form .square-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #55e41d;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0 60px;
+  height: 60px;
+  border: none;
+  width: 100%;
+  font-family: 'Quicksand';
+}
+.contact-form .square-button:hover, .contact-form .square-button:focus {
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .contact-wrap {
+    width: 60%;
+    margin: auto;
+  }
+}
+/*----page styles---*/
+body {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNTEyZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RkMjQ3NiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #91f039), color-stop(100%, #0c9017));
+  background-image: -moz-linear-gradient(left, #91f039, #0c9017);
+  background-image: -webkit-linear-gradient(left, #91f039, #0c9017);
+  background-image: linear-gradient(to right, #91f039,#0c9017);
+  
+}
+
+.contact-wrap {
+  padding: 15px;
+}
+
+.cont {
+  background-color: white;
+  color: #000000;
+  padding: 40px;
+  margin: 0 0 50px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'News Cycle', sans-serif;
+}
+.cont small {
+  font-size: 18px;
+  display: block;
+  text-transform: none;
+  font-weight: 300;
+  margin-top: 10px;
+  color: #494747c7;
+}
+
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  </head>
+  <body>
+    
+                                    <header>
+                      <%- include('templates/header.ejs'); -%>
+                                   </header>
+        
+            <!--BIG CONTAINER--> 
+          
+            <!--CONTENT FULL WIDTH THING I'M PRETTY SURE I NEED BUT I HAVE TO LOOK UP AGAIN-->
+            <div id="content" class="col content content-fullwidth">
+            <!--CONTENT FULL WIDTH THING I'M PRETTY SURE I NEED BUT I HAVE TO LOOK UP AGAIN-->
+            <h1 class="cont">Contact Us
+            <small>Ask us for more information, Questions, Services and more</small>
+            </h1>
+
+              <section class="contact-wrap">
+
+                <form action="" class="contact-form">
+
+                  <div class="col-sm-6">
+                    <div class="input-block">
+                      <label for="">First Name</label>
+                      <input type="text" id="name1" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="input-block">
+                      <label for="">Last Name</label>
+                      <input type="text" id="name2" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <div class="input-block">
+                      <label for="">Email</label>
+                      <input type="text" id="email2" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <div class="input-block">
+                      <label for="">Message Subject</label>
+                      <input type="text" id="subj"class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <div class="input-block textarea">
+                      <label for="">Drop your message here</label>
+                      <textarea rows="3" type="text" id="text1" class="form-control"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <button class="square-button">Send</button>
+                  </div>
+                  
+                </form>
+              </section>
+             
+            </div>
+            
+      <footer>
+        <!--Container part of the Footer-->
+       <div class="container-fluid padding">
+        <div class="row text-center">
+         <!-- LOGO PART WITH INFO,Number, email, location-->
+          <div class="col-md-4">
+            <img src="../public/assets/LogoMakr_5iAESO.png" class="img-fluid">
+            <hr class="light">
+            <p>555-555-555</p>
+            <p>email@myemail.com</p>
+            <p>1320 Street Name</p>
+            <p>Worcester, Massachuttests, 01609</p>
+          </div>
+         <!--Navigation part of the Footer-->
+        
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Explore WPNS</h5>
+            <hr class="light">
+            <p><a href="">Virtual Visits</a></p> 
+            <p><a href="">In-Office Visits</a></p> 
+            <p><a href="">About Us</a></p> 
+            <p><a href="">Contact</a></p> 
+            <p><a href="index.html">Home</a></p> 
+          </div>
+        
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Patient Resources</h5>
+            <hr class="light">
+            <p><a href="">Request Medical Records</a></p> 
+            <p><a href="">In-Office Visits</a></p> 
+            <p><a href="">About Us</a></p> 
+          </div>
+          <div class="col-12">
+             <hr class="light">
+             <h6>&copy; 2020 WPNServices</h6>
+             <span><a class="footer-anchor-style" href="">Terms &amp; Conditions</a></span>
+             <br>
+             <span><a class="footer-anchor-style-2" href="">Privacy Policy</a></span>
+          </div>
+        </div>
+      </div>
+    </footer> 
+    <script>
+      //material contact form animation
+$('.contact-form').find('.form-control').each(function() {
+  var targetItem = $(this).parent();
+  if ($(this).val()) {
+    $(targetItem).find('label').css({
+      'top': '10px',
+      'fontSize': '14px'
+    });
+  }
+});
+$('.contact-form').find('.form-control').focus(function() {
+  $(this).parent('.input-block').addClass('focus');
+  $(this).parent().find('label').animate({
+    'top': '10px',
+    'fontSize': '14px'
+  }, 300);
+});
+$('.contact-form').find('.form-control').blur(function() {
+  if ($(this).val().length == 0) {
+    $(this).parent('.input-block').removeClass('focus');
+    $(this).parent().find('label').animate({
+      'top': '25px',
+      'fontSize': '18px'
+    }, 300);
+  }
+});
+    </script>
+    <script src="../public/assets/cpage.js"></script>      
+  </body>
+</html>
